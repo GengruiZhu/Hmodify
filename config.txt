@@ -1,0 +1,159 @@
+# 染色体操作配置文件
+# 格式说明：
+# - 全局参数：仅定义 OUTPUT_DIR（总输出目录，如 Chr03）、AGP_FILE、FASTA_FILE
+# - 每组操作以 [PartXX] 开头，XX 为编号（如 Part01, Part02）
+# - 每个 PartXX 独立定义所有参数，包括染色体起止范围、复制片段、插入点等
+# - 参数格式：KEY=VALUE，空值表示不执行该操作
+# - 注释以 # 开头，读取时忽略
+# - 支持单向复制（仅 A->B 或 B->A）或双向复制
+
+# 全局参数
+[DEFAULT]
+# 每套染色体操作完的输出目录
+OUTPUT_DIR=Chr03
+# AGP 文件路径
+AGP_FILE=/public1/home/stu_chenyi/Project/FJDY/FJDY-Genetimos/2025_version/03.Cphasing/version_new/version4/scaffold/Chr1/5_27_version/utg_txt/FJDY_5_27v.agp
+# FASTA 文件路径
+FASTA_FILE=/public1/home/stu_chenyi/Project/FJDY/FJDY-Genetimos/2025_version/03.Cphasing/version_new/version4/scaffold/Chr2/utg_fasta/FJDY_v2.asm.bp.p_utg.fa
+
+[Part__]
+# 染色体A编号（如 39）
+# CHR_A=39
+# 染色体A的完整起始utg
+# START_UTG_FULL_A=utg001000l
+# 染色体A的完整结束utg
+# END_UTG_FULL_A=utg001500l
+# 染色体A复制区间的起始utg
+# START_UTG_A=utg001234l
+# 染色体A复制区间的结束utg
+# END_UTG_A=utg001235l
+# 插入到染色体B的utg之后
+# INSERT_AFTER_UTG_B=utg001236l
+# 染色体B编号（如 40）
+# CHR_B=40
+# 染色体B的完整起始utg
+# START_UTG_FULL_B=utg002000l
+# 染色体B的完整结束utg
+# END_UTG_FULL_B=utg002500l
+# 染色体B复制区间的起始utg（单向复制可留空）
+# START_UTG_B=utg001345l
+# 染色体B复制区间的结束utg（单向复制可留空）
+# END_UTG_B=utg001346l
+# 插入到染色体A的utg之后（单向复制可留空）
+# INSERT_AFTER_UTG_A=utg001237l
+# 参考染色体编号（可选，留空则不使用）
+# REF_CHR=33
+# 参考染色体的utg（可选，留空则不使用）
+# REF_UTG=utg000060l
+
+[Part01]
+CHR_A=35
+START_UTG_FULL_A=utg001034l
+END_UTG_FULL_A=utg000313l
+START_UTG_A=utg001034l
+END_UTG_A=utg000682l
+INSERT_AFTER_UTG_B=utg005160l
+CHR_B=36
+START_UTG_FULL_B=utg000131l
+END_UTG_FULL_B=utg005160l
+START_UTG_B=
+END_UTG_B=
+INSERT_AFTER_UTG_A=
+REF_CHR=33
+REF_UTG=utg000060l
+
+[Part02]
+CHR_A=37
+START_UTG_FULL_A=utg000157l
+END_UTG_FULL_A=utg005707l
+START_UTG_A=utg000157l
+END_UTG_A=utg000909l
+INSERT_AFTER_UTG_B=utg000182l
+CHR_B=38
+START_UTG_FULL_B=utg000142l
+END_UTG_FULL_B=utg000182l
+START_UTG_B=utg000913l
+END_UTG_B=utg000913l
+INSERT_AFTER_UTG_A=utg005707l
+REF_CHR=33
+REF_UTG=utg000060l
+
+[Part0]
+CHR_A=
+START_UTG_FULL_A=
+END_UTG_FULL_A=
+START_UTG_A=
+END_UTG_A=
+INSERT_AFTER_UTG_B=
+CHR_B=
+START_UTG_FULL_B=
+END_UTG_FULL_B=
+START_UTG_B=
+END_UTG_B=
+INSERT_AFTER_UTG_A=
+REF_CHR=33
+REF_UTG=utg000060l
+
+[Part0]
+CHR_A=
+START_UTG_FULL_A=
+END_UTG_FULL_A=
+START_UTG_A=
+END_UTG_A=
+INSERT_AFTER_UTG_B=
+CHR_B=
+START_UTG_FULL_B=
+END_UTG_FULL_B=
+START_UTG_B=
+END_UTG_B=
+INSERT_AFTER_UTG_A=
+REF_CHR=33
+REF_UTG=utg000060l
+
+[Part0]
+CHR_A=
+START_UTG_FULL_A=
+END_UTG_FULL_A=
+START_UTG_A=
+END_UTG_A=
+INSERT_AFTER_UTG_B=
+CHR_B=
+START_UTG_FULL_B=
+END_UTG_FULL_B=
+START_UTG_B=
+END_UTG_B=
+INSERT_AFTER_UTG_A=
+REF_CHR=33
+REF_UTG=utg000060l
+
+[Part0]
+CHR_A=
+START_UTG_FULL_A=
+END_UTG_FULL_A=
+START_UTG_A=
+END_UTG_A=
+INSERT_AFTER_UTG_B=
+CHR_B=
+START_UTG_FULL_B=
+END_UTG_FULL_B=
+START_UTG_B=
+END_UTG_B=
+INSERT_AFTER_UTG_A=
+REF_CHR=33
+REF_UTG=utg000060l
+
+[Part0]
+CHR_A=
+START_UTG_FULL_A=
+END_UTG_FULL_A=
+START_UTG_A=
+END_UTG_A=
+INSERT_AFTER_UTG_B=
+CHR_B=
+START_UTG_FULL_B=
+END_UTG_FULL_B=
+START_UTG_B=
+END_UTG_B=
+INSERT_AFTER_UTG_A=
+REF_CHR=33
+REF_UTG=utg000060l
